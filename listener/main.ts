@@ -86,3 +86,7 @@ function heartbeat(interval: number) {
     ws.send(JSON.stringify(payload));
   }, interval);
 }
+
+Deno.cron("Wake Up!", "*/10 * * * *", () => {
+  fetch("https://article100knocks.deno.dev")
+});
