@@ -87,6 +87,6 @@ function heartbeat(interval: number) {
   }, interval);
 }
 
-Deno.cron("Wake Up!", "*/10 * * * *", () => {
+Deno.cron("Wake Up", "*/10 * * * *", () => {
   fetch("https://article100knocks.deno.dev")
 });
