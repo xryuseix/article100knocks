@@ -1,0 +1,13 @@
+{
+  "version": "5",
+  "dialect": "sqlite",
+  "entries": [
+    {
+      "idx": 0,
+      "version": "5",
+      "when": 1704534914301,
+      "tag": "0000_lying_puppet_master",
+      "breakpoints": true
+    }
+  ]
+}

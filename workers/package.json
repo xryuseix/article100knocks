@@ -1,0 +1,23 @@
+{
+  "scripts": {
+    "dev": "wrangler dev src/index.ts",
+    "deploy": "wrangler deploy --minify src/index.ts",
+    "migrate-init": "drizzle-kit generate:sqlite --out migrations --schema src/schema.ts",
+    "migrate-local": "wrangler d1 migrations apply a100db --local",
+    "migrate-remote": "wrangler d1 migrations apply a100db"
+  },
+  "dependencies": {
+    "@types/uuid": "^9.0.7",
+    "discord-api-types": "^0.37.67",
+    "discord-interactions": "^3.4.0",
+    "hono": "^3.11.11",
+    "uuid": "^9.0.1"
+  },
+  "devDependencies": {
+    "@cloudflare/workers-types": "^4.20231218.0",
+    "better-sqlite3": "^9.2.2",
+    "drizzle-kit": "^0.20.9",
+    "drizzle-orm": "^0.29.3",
+    "wrangler": "^3.22.0"
+  }
+}
