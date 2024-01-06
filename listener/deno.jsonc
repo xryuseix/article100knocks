@@ -1,0 +1,14 @@
+{
+  "tasks": {
+    "run": "deno run --allow-net --allow-env main.ts",
+    "deploy": "deployctl deploy --prod"
+  },
+  "deploy": {
+    "project": "01e9c590-da31-4a96-ac5c-b4b6c8268861",
+    "exclude": [
+      "**/node_modules"
+    ],
+    "include": [],
+    "entrypoint": "main.ts"
+  }
+}
